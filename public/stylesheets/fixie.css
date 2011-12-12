@@ -1,0 +1,221 @@
+/* Reset */
+body,img,p,h1,h2,h3,h4,h5,h6,ul,ol {margin:0; padding:0; list-style:none; border:none;}
+/* End Reset */
+
+body {font-size:0.8em; font-family:Arial,Verdana,Sans-Serif; background: #F9F6E1;}
+a {color: red;}
+
+/* Colors */
+/*.color-yellow {background:#ff6;}*/
+.color-yellow {background:#c2e0e3;}
+.color-red    {background:#dd0000;}
+.color-blue   {background:#148ea4;}
+.color-white  {background:#dfdfdf;}
+.color-orange {background:#f66e00;}
+.color-green  {background:#8dc100;}
+.color-yellow h3,
+.color-white h3,
+.color-green h3
+	{color:#333;}
+.color-red h3,
+.color-blue h3,
+.color-orange h3
+	{color:#FFF;}
+/* End Colors */
+
+/* Head section */
+#head {
+background: #99cc00; /* Old browsers */
+background: -moz-linear-gradient(top,  #99cc00 0%, #65b200 44%, #398235 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#99cc00), color-stop(44%,#65b200), color-stop(100%,#398235)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #99cc00 0%,#65b200 44%,#398235 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #99cc00 0%,#65b200 44%,#398235 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #99cc00 0%,#65b200 44%,#398235 100%); /* IE10+ */
+background: linear-gradient(top,  #99cc00 0%,#65b200 44%,#398235 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99cc00', endColorstr='#398235',GradientType=0 ); /* IE6-9 */
+    height: 50px;
+}
+#head h1 {
+    line-height: 50px;
+    color: #FFF;
+    margin-left: 10px;
+    text-indent: -5000px;
+}
+span.user-id {
+    color: #FFFFFF;
+    display: block;
+    float: right;
+    font-weight: bold;
+    height: 20px;
+    position: absolute;
+    right: 10px;
+    text-align: right;
+    top: 5px;
+    width: 100px;
+}
+/* End Head Section */
+
+/* lanes section */
+.lane {
+    /*width: 33.3%;*/
+    width: 20%;
+    float: left;
+    background-color: #fff;
+}
+.lane-cards {
+    width: 20%;
+    float: left;
+    /*margin-top: -10px;*/
+    background: #fff url(/public/images/column-bg-right.png) repeat-y right top;
+	/* Min-height:*/ 
+	min-height: 800px;
+	height: auto !important; 
+	height: 800px;
+}
+.lane-cards.last {
+    background-image: none;
+    background-color: #fff;
+}
+/*
+#lane1 {
+    border-left-width: 0 none;
+}
+*/
+/* lane dividers (background-images) :
+	#lanes #lane1 { background: url(/public/images/lane-bg-left.png) no-repeat right top; }
+	#lanes #lane3 { background: url(/public/images/lane-bg-right.png) no-repeat left top; }
+	*/
+.card {
+    -webkit-box-shadow: 1px 1px 1px 1px #aaa;
+    -moz-box-shadow: 1px 1px 1px 1px #aaa;
+    box-shadow: 1px 1px 1px 1px #aaa; 
+    border: 3px solid #c2e0e3;
+    max-height: 150px;
+    overflow: hidden;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+#lanes .card-counter {
+    padding: 2px;
+    text-align: center;
+    margin-top: 5px;
+}
+li.lane-title {
+    text-align: center;
+}
+li.lane-title h2 {
+    color: #999;
+    font-weight: 700;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+}
+#lanes .card-counter .count {
+    margin: 0 auto;
+    padding: 3px 7px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    background-color: #9c0;
+    color: #fff;
+    font-weight: bold;
+    font-size: 10px;
+    text-shadow: -1px 0 1px #6e9200;
+}
+#lanes .card {
+    margin: 20px 1.2em 0 1.2em;
+/*
+    min-width: 150px;
+    width: 43%;
+    overflow: hidden;
+    height:150px;
+    float: left;
+*/
+/*
+    padding: 2px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+*/
+}
+#lanes .card .card-head {
+    color: #000;
+    width: 100%;
+    line-height: 18px;
+}
+#lanes .card .card-footer {
+    clear: both;
+}
+#lanes .card .card-head h3 {
+    padding: 0 5px;
+    float: left;
+    font-size: 14px;
+}
+#lanes .card .card-head h3 span.card-id {
+    display: block;
+    float: left;
+    height: 18px;
+    line-height: 18px;
+    padding: 0 5px;
+    margin: 0 5px 0 -5px;
+    font-weight: 700;
+    font-size: 14px;
+    background-color: #a1d0d4;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+#lanes .card .card-head h3 span.card-title {
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 400;
+    color: #555;
+}
+#lanes .card .card-content {
+/*
+    background: #333 url(/public/images/card-content-bg.png) repeat-x;
+*/
+    padding: 5px 8px;
+    color: #666;
+/*
+    -moz-border-radius-bottomleft: 2px;
+    -moz-border-radius-bottomright: 2px;
+    -webkit-border-bottom-left-radius: 2px;
+    -webkit-border-bottom-right-radius: 2px;
+*/
+    line-height: 1.2em;
+    overflow: hidden;
+}
+#lanes .card .card-content p {
+    padding: 0;
+/*
+    border-bottom: 1px solid #666;
+*/
+}
+#lanes .card .card-content img {
+    float: right;
+    margin: 10px;
+    border: 1px solid #FFF;
+}
+#lanes .card .card-content pre {
+    padding: 0.5em 5px;
+    color: #EEE;
+    font-size: 12px;
+}
+#lanes .card .card-content ul {
+    padding: 5px 0 5px 20px;
+    list-style: disc;
+}
+#lanes .card .card-content ul li {padding: 3px 0;}
+#lanes .card .card-content ul.images {
+    padding: 7px 0 0 0;
+    list-style: none;
+    height: 1%;
+}
+#lanes .card .card-content ul.images li {
+    display: inline;
+    float: left;
+}
+#lanes .card .card-content ul.images img {
+    display: inline;
+    float: left;
+    margin: 0 0 7px 7px;
+}
+/* End lanes section */
+
