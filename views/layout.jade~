@@ -4,7 +4,6 @@ html
     title= title
     link(rel='stylesheet', href='/stylesheets/fixie.css')
     link(href='http://fonts.googleapis.com/css?family=Varela+Round', rel='stylesheet')  
-    link(href='http://fonts.googleapis.com/css?family=Pacifico', rel='stylesheet')
   body!= body
   script(src="http://jqueryjs.googlecode.com/files/jquery-1.2.6.min.js")
   script(src="/public/javascripts/jquery-ui-personalized-1.6rc2.min.js")

@@ -238,12 +238,10 @@ ul#messages
     background-color: #111; 
     height: 400px; 
     color: #cce;
-    width: 20%;
-    float: left;
 }
 ul#messages li
 {
-    padding: 10px 10px 0 10px;
+    padding: 20px 20px 0 20px;
 }
 /* end Messages section */
 

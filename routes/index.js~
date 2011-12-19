@@ -6,7 +6,7 @@ exports.board = function(req, res){
   if (req.loggedIn) {
     res.render('board', { title: 'Fixie: Board' })
   } else {
-    res.redirect('/')
+    res.render('home', { title: 'Login' })
   }
 };
 

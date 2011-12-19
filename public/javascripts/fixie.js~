@@ -255,7 +255,7 @@ var fixie = {
                 var lane = $(ui.item).parent().attr('id');
                 var laneName = $(ui.item).parent().find('li.lane-title h2').html();
                 var index = $(ui.item).parent().children('li.card').index(ui.item);
-                var msg = ' moved card ' + cardNum + ' to <strong>' + laneName + '</strong>'			;
+                var msg = ' moved card ' + cardNum + ' to <strong>' + laneName + '</strong>';
 	        socket.emit('movedCard',{ cardId: card, laneId: lane, position: index });
                 socket.send('<strong>' + $('span.user-id').html() + '</strong>' + msg);
                 displayMessage('<strong>You</strong>'+ msg);
