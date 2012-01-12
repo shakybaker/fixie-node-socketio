@@ -67,7 +67,6 @@
                       span.card-title As a Buyer I want to manage season and status codes to products in a regimented, codified way,So that OTB reports can be more granulur for better understanding
                 .card-footer
         ul#messages
-            li latest activity
         .card-footer
 #footer
 
